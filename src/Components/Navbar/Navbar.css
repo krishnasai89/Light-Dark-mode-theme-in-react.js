@@ -5,6 +5,7 @@
     justify-content: space-between;
     background: #fff;
     padding: 15px 7%;
+    transition: 0.5s;
 }
 .logo{
     width: 160px;
@@ -21,6 +22,28 @@ ul li{
     font-size: 18px;
     cursor: pointer;
 }
+ul li a{
+    font-size: 18px;
+    cursor: pointer;
+    color: #555;
+    transition: 0.5s underline;
+}
+ul li a:link{
+        text-decoration: none;
+    }
+ul li a:visited{
+        text-decoration: none;
+    }
+ul li a:hover{
+        text-decoration: underline;
+    }
+ul li a:active{
+        text-decoration: underline;
+    }
+@keyframes underline{
+    
+}
+
 .toggle-icon{
     width: 50px;
     cursor: pointer;
@@ -48,4 +71,20 @@ ul li{
 .Search-box img{
     width: 20px;
     cursor: pointer;
+}
+.dark .navbar{
+    background: #000;
+    color: #fff;
+}
+.dark .Search-box{
+    background: #fff;
+}
+.dark .Search-box input{
+    color: #222;
+}
+.dark .Search-box input::placeholder{
+    color: #222;
+}
+.dark ul li a{
+    color: #fff;
 }
